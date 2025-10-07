@@ -12,535 +12,416 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 1200px;
+            color: #24292f;
+            background: #ffffff;
+            max-width: 1012px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            backdrop-filter: blur(10px);
+            padding: 40px 20px;
         }
 
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 40px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+            margin-bottom: 40px;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 30px;
         }
 
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            margin: 0 auto 20px;
-            display: block;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            position: relative;
-            z-index: 1;
+            margin-bottom: 20px;
+            border: 3px solid #d0d7de;
         }
 
         .name {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            position: relative;
-            z-index: 1;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #0969da;
+            margin-bottom: 8px;
         }
 
         .title {
-            font-size: 1.3rem;
-            opacity: 0.9;
+            font-size: 1.2rem;
+            color: #656d76;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #656d76;
             margin-bottom: 20px;
-            position: relative;
-            z-index: 1;
         }
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .social-link {
+        .github-link {
             display: inline-block;
-            padding: 10px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 25px;
-            text-decoration: none;
+            padding: 8px 16px;
+            background: #0969da;
             color: white;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s;
         }
 
-        .social-link:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .content {
-            padding: 40px;
+        .github-link:hover {
+            background: #0860ca;
         }
 
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 32px;
         }
 
         .section-title {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #3498db;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: #e74c3c;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #24292f;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d0d7de;
         }
 
         .about {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 5px solid #3498db;
-            margin-bottom: 30px;
+            background: #f6f8fa;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+            margin-bottom: 24px;
+        }
+
+        .about p {
+            margin-bottom: 12px;
+            color: #24292f;
+        }
+
+        .about p:last-child {
+            margin-bottom: 0;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
         }
 
         .skill-category {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+            transition: box-shadow 0.2s;
         }
 
         .skill-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
         .skill-category h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
+            color: #24292f;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .skill-icon {
-            width: 30px;
-            height: 30px;
-            border-radius: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
             display: inline-block;
         }
 
+        .cyber-security {
+            border-left: 4px solid #d73a49;
+        }
+
+        .fullstack {
+            border-left: 4px solid #0366d6;
+        }
+
+
         .languages-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
         }
 
         .language-item {
             text-align: center;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            padding: 12px;
+            background: #f6f8fa;
+            border-radius: 6px;
+            border: 1px solid #d0d7de;
+            transition: background-color 0.2s;
         }
 
         .language-item:hover {
-            background: #e9ecef;
-            border-color: #3498db;
-            transform: scale(1.05);
+            background: #f1f3f4;
         }
 
         .language-logo {
-            width: 50px;
-            height: 50px;
-            margin: 0 auto 10px;
-            border-radius: 8px;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 8px;
             display: block;
         }
 
         .language-name {
-            font-weight: 600;
-            color: #2c3e50;
+            font-weight: 500;
+            color: #24292f;
             font-size: 0.9rem;
         }
 
-        .cyber-security {
-            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-            color: white;
-        }
-
-        .cyber-security h3 {
-            color: white;
-        }
-
-        .game-dev {
-            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
-            color: white;
-        }
-
-        .game-dev h3 {
-            color: white;
-        }
-
-        .fullstack {
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-            color: white;
-        }
-
-        .fullstack h3 {
-            color: white;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            border-top: 4px solid #3498db;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-        }
-
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .project-description {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .project-tech {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tech-tag {
-            background: #ecf0f1;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            color: #2c3e50;
-        }
-
-        .contact-info {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: scale(1.05);
-        }
 
         .footer {
-            background: #2c3e50;
-            color: white;
+            border-top: 1px solid #d0d7de;
+            padding-top: 20px;
             text-align: center;
-            padding: 20px;
+            color: #656d76;
             font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                border-radius: 15px;
-            }
-            
-            .header {
-                padding: 30px 20px;
+            body {
+                padding: 20px 16px;
             }
             
             .name {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             
-            .content {
-                padding: 30px 20px;
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
             
-            .social-links {
-                flex-direction: column;
-                align-items: center;
+            .languages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
-        }
-
-        .pulse {
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .hacker-text {
-            background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradientShift 3s ease infinite;
-        }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <img src="https://avatars.githubusercontent.com/u/150449604?v=4" alt="Ali Ramazan" class="profile-img">
-            <h1 class="name">Ali Ramazan</h1>
-            <p class="title">Fullstack Developer & Cyber Security Specialist</p>
-            <div class="social-links">
-                <a href="https://github.com/xrefunsen" class="social-link" target="_blank">GitHub</a>
-                <a href="#" class="social-link">LinkedIn</a>
-                <a href="#" class="social-link">Email</a>
-            </div>
-        </header>
-
-        <main class="content">
-            <section class="about section">
-                <h2 class="section-title">Hakkımda</h2>
-                <p>Merhaba! Ben Ali Ramazan, tutkulu bir yazılım geliştiriciyim. Siber güvenlik alanında uzmanlaşmış, fullstack web geliştirme konusunda deneyimli ve oyun geliştirme konusunda çalışmalar yapan bir geliştiriciyim. Sürekli öğrenmeyi seven, teknoloji dünyasının hızına ayak uyduran bir profesyonelim.</p>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Uzmanlık Alanları</h2>
-                <div class="skills-grid">
-                    <div class="skill-category cyber-security">
-                        <h3>
-                            <span class="skill-icon" style="background: #e74c3c;">🔒</span>
-                            Siber Güvenlik
-                        </h3>
-                        <p>Penetrasyon testleri, güvenlik açığı analizi ve siber güvenlik danışmanlığı konularında deneyimli. Gri hacker yaklaşımıyla güvenlik testleri yapıyorum.</p>
-                    </div>
-
-                    <div class="skill-category fullstack">
-                        <h3>
-                            <span class="skill-icon" style="background: #3498db;">🌐</span>
-                            Fullstack Development
-                        </h3>
-                        <p>Frontend'den backend'e, veritabanından deployment'a kadar tüm süreçleri yönetebilen tam kapsamlı web uygulamaları geliştiriyorum.</p>
-                    </div>
-
-                    <div class="skill-category game-dev">
-                        <h3>
-                            <span class="skill-icon" style="background: #9b59b6;">🎮</span>
-                            Game Development
-                        </h3>
-                        <p>Oyun geliştirme konusunda çalışmalar yapıyorum. Farklı oyun motorları ve programlama dilleri kullanarak projeler geliştiriyorum.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Programlama Dilleri & Teknolojiler</h2>
-                <div class="languages-grid">
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="language-logo">
-                        <div class="language-name">Java</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="language-logo">
-                        <div class="language-name">PHP</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="language-logo">
-                        <div class="language-name">JavaScript</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="language-logo">
-                        <div class="language-name">C#</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="language-logo">
-                        <div class="language-name">C</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="language-logo">
-                        <div class="language-name">C++</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="language-logo">
-                        <div class="language-name">Python</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="language-logo">
-                        <div class="language-name">HTML5</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="language-logo">
-                        <div class="language-name">CSS3</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="language-logo">
-                        <div class="language-name">Node.js</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="language-logo">
-                        <div class="language-name">React</div>
-                    </div>
-                    <div class="language-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="language-logo">
-                        <div class="language-name">MySQL</div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Projeler</h2>
-                <div class="projects">
-                    <div class="project-card">
-                        <h3 class="project-title">Bug Reports Plugin</h3>
-                        <p class="project-description">Spigot için geliştirilmiş kapsamlı bug raporlama sistemi. Minecraft sunucuları için gelişmiş hata takip ve yönetim aracı.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spigot API</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-title">Cyber Security Toolkit</h3>
-                        <p class="project-description">Siber güvenlik uzmanları için geliştirilmiş kapsamlı araç seti. Penetrasyon testleri ve güvenlik analizi için gerekli araçları içerir.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Network Security</span>
-                            <span class="tech-tag">Penetration Testing</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-title">Game Development Framework</h3>
-                        <p class="project-description">Oyun geliştirme süreçlerini hızlandıran özel framework. Farklı oyun türleri için modüler yapı sunar.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            <span class="tech-tag">OpenGL</span>
-                            <span class="tech-tag">Game Engine</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">İletişim</h2>
-                <div class="contact-info">
-                    <h3>Benimle İletişime Geçin</h3>
-                    <div class="contact-grid">
-                        <div class="contact-item">
-                            <span>📧</span>
-                            <span>ali.ramazan@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span>🌐</span>
-                            <span>github.com/xrefunsen</span>
-                        </div>
-                        <div class="contact-item">
-                            <span>💼</span>
-                            <span>LinkedIn Profile</span>
-                        </div>
-                        <div class="contact-item">
-                            <span>📍</span>
-                            <span>Türkiye</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p>&copy; 2024 Ali Ramazan. Tüm hakları saklıdır. | <span class="hacker-text">Gri Hacker & Fullstack Developer</span></p>
-        </footer>
+    <div class="header">
+        <img src="https://avatars.githubusercontent.com/u/150449604?v=4" alt="Ali Ramazan" class="profile-img">
+        <h1 class="name">Ali Ramazan</h1>
+        <p class="title">Fullstack Developer & Cyber Security Specialist</p>
+        <p class="subtitle">Grey Hat Hacker</p>
+        <a href="https://github.com/xrefunsen" class="github-link" target="_blank">GitHub</a>
     </div>
+
+    <main>
+        <section class="about section">
+            <h2 class="section-title">Hakkımda</h2>
+            <p>Merhaba! Ben Ali Ramazan. Tutkulu bir yazılım geliştirici olarak, teknoloji dünyasında kendimi sürekli geliştiren bir profesyonelim.</p>
+            
+            <p><strong>Siber Güvenlik</strong> alanında uzmanlaşmış, gri hacker yaklaşımıyla güvenlik testleri yapan, sistemleri korumak için saldırgan düşünce yapısını anlayan bir güvenlik uzmanıyım.</p>
+            
+            <p><strong>Fullstack Development</strong> konusunda deneyimli, frontend'den backend'e, veritabanından deployment'a kadar tüm süreçleri yönetebilen bir geliştiriciyim.</p>
+            
+            <p>Sürekli öğrenmeyi seven, teknoloji dünyasının hızına ayak uyduran ve her yeni projeyle kendini geliştiren bir geliştiriciyim.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Uzmanlık Alanları</h2>
+            <div class="skills-grid">
+                <div class="skill-category cyber-security">
+                    <h3>
+                        <span class="skill-icon" style="background: #d73a49;"></span>
+                        Siber Güvenlik
+                    </h3>
+                    <p>Penetrasyon testleri, güvenlik açığı analizi ve siber güvenlik danışmanlığı konularında deneyimli. Gri hacker yaklaşımıyla güvenlik testleri yapıyorum.</p>
+                </div>
+
+                <div class="skill-category fullstack">
+                    <h3>
+                        <span class="skill-icon" style="background: #0366d6;"></span>
+                        Fullstack Development
+                    </h3>
+                    <p>Frontend'den backend'e, veritabanından deployment'a kadar tüm süreçleri yönetebilen tam kapsamlı web uygulamaları geliştiriyorum.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Programlama Dilleri</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="language-logo">
+                    <div class="language-name">Java</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="language-logo">
+                    <div class="language-name">JavaScript</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="language-logo">
+                    <div class="language-name">C#</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="language-logo">
+                    <div class="language-name">C</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="language-logo">
+                    <div class="language-name">C++</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="language-logo">
+                    <div class="language-name">Python</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="language-logo">
+                    <div class="language-name">PHP</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" class="language-logo">
+                    <div class="language-name">TypeScript</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" class="language-logo">
+                    <div class="language-name">Go</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" class="language-logo">
+                    <div class="language-name">Rust</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" class="language-logo">
+                    <div class="language-name">Kotlin</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift" class="language-logo">
+                    <div class="language-name">Swift</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby" class="language-logo">
+                    <div class="language-name">Ruby</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua" class="language-logo">
+                    <div class="language-name">Lua</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Web Uygulamaları</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="language-logo">
+                    <div class="language-name">HTML5</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="language-logo">
+                    <div class="language-name">CSS3</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="language-logo">
+                    <div class="language-name">Node.js</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="language-logo">
+                    <div class="language-name">React</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="language-logo">
+                    <div class="language-name">Bootstrap</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Siber Güvenlik & DevOps</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="language-logo">
+                    <div class="language-name">Linux</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="language-logo">
+                    <div class="language-name">Bash</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="language-logo">
+                    <div class="language-name">Docker</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="language-logo">
+                    <div class="language-name">Git</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Veritabanları</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="language-logo">
+                    <div class="language-name">MySQL</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" class="language-logo">
+                    <div class="language-name">SQLite</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="language-logo">
+                    <div class="language-name">PostgreSQL</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="language-logo">
+                    <div class="language-name">MongoDB</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Model & Game Engines</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity" class="language-logo">
+                    <div class="language-name">Unity</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg" alt="Unreal Engine" class="language-logo">
+                    <div class="language-name">Unreal Engine</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" alt="Blender" class="language-logo">
+                    <div class="language-name">Blender</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/autodesk/autodesk-original.svg" alt="3ds Max" class="language-logo">
+                    <div class="language-name">3ds Max</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Cloud & Platform</h2>
+            <div class="languages-grid">
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="language-logo">
+                    <div class="language-name">AWS</div>
+                </div>
+                <div class="language-item">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" class="language-logo">
+                    <div class="language-name">Azure</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ali Ramazan. Tüm hakları saklıdır. | Gri Hacker & Fullstack Developer</p>
+    </footer>
 </body>
 </html>
