@@ -73,10 +73,6 @@ Frontend'den backend'e, veritabanından deployment'a kadar tüm süreçleri yön
 ![AWS](https://img.shields.io/badge/Amazon%20AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=xrefunsen&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
----
-
 <div align="center">
-  <p><strong>&copy; 2024 Ali Ramazan. Tüm hakları saklıdır. | Gri Hacker & Fullstack Developer</strong></p>
+  <p><strong>&copy; 2025 Ali Ramazan. Tüm hakları saklıdır. | Gri Hacker & Fullstack Developer</strong></p>
 </div>
