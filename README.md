@@ -73,14 +73,6 @@ Frontend'den backend'e, veritabanından deployment'a kadar tüm süreçleri yön
 ![AWS](https://img.shields.io/badge/Amazon%20AWS-%23FF9900.svg?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white)
 
----
-
-## 📊 GitHub Stats:
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=xrefunsen&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=xrefunsen&theme=dark&hide_border=false)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=xrefunsen&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
