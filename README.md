@@ -53,20 +53,6 @@
             margin-bottom: 20px;
         }
 
-        .github-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #6272a4;
-            color: #f8f8f2;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-
-        .github-link:hover {
-            background: #44475a;
-        }
 
         .section {
             margin-bottom: 40px;
@@ -132,12 +118,6 @@
             border-left-color: #8be9fd;
         }
 
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 12px;
-            margin-top: 15px;
-        }
 
         .badge {
             display: inline-block;
@@ -168,18 +148,6 @@
             border-radius: 8px;
         }
 
-        .tech-category {
-            margin-bottom: 30px;
-        }
-
-        .tech-category h3 {
-            color: #bd93f9;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
 
         .footer {
             text-align: center;
@@ -202,9 +170,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .tech-grid {
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            }
         }
     </style>
 </head>
